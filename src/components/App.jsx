@@ -13,17 +13,7 @@ export class App extends Component {
 
   render() {
     return (
-      <div
-        style={{
-          height: '100vh',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-          fontSize: 40,
-          color: '#010101',
-        }}
-      >
+      <div className={css.main_div}>
         <h2>Please leave feedback</h2>
         <div>
           <button>Good</button>
@@ -35,6 +25,8 @@ export class App extends Component {
           <p>Good: 3</p>
           <p>Neutral: 2</p>
           <p>Bad: 2</p>
+          <p>Total: 7</p>
+          <p>Positive feedback: XX%</p>
         </div>
       </div>
     );
